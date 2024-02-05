@@ -1,0 +1,249 @@
+SpreadsheetGear®
+SOFTWARE LICENSE AGREEMENT
+
+PLEASE READ THIS SOFTWARE LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING OR
+INSTALLING THE SPREADSHEETGEAR SOFTWARE. This Software License Agreement
+("Agreement") governs your use of the SpreadsheetGear Software. BY DOWNLOADING
+OR INSTALLING THE SOFTWARE OR OTHERWISE INDICATING YOUR ACCEPTANCE OF THIS
+AGREEMENT, YOU REPRESENT AND WARRANT THAT YOU (I) ARE AUTHORIZED TO SIGN FOR AND
+BIND YOURSELF AND ANY OTHER PARTY ON WHOSE BEHALF YOU USE THE SOFTWARE (the
+"Contracting Party") AND (II) AGREE FOR YOURSELF AND THE CONTRACTING PARTY TO BE
+BOUND BY THIS AGREEMENT. IF YOU DO NOT AGREE TO ALL OF THE TERMS OF THIS
+AGREEMENT, DO NOT DOWNLOAD OR INSTALL THE SOFTWARE. YOU AGREE THAT THIS
+AGREEMENT IS ENFORCEABLE LIKE ANY WRITTEN NEGOTIATED AGREEMENT SIGNED BY YOU. IF
+THE COPY OF THE SOFTWARE YOU RECEIVED WAS ACCOMPANIED BY A PRINTED OR OTHER FORM
+OF "HARD-COPY" END USER LICENSE AGREEMENT WHOSE TERMS VARY FROM THIS AGREEMENT,
+THEN THE HARD-COPY END USER LICENSE AGREEMENT GOVERNS YOUR USE OF THE SOFTWARE.
+
+1. Definitions.
+
+(a) "Application" means any computer software that directly or indirectly
+references one or more Redistributable Elements, including but not limited to
+any end-user application, enterprise software, system software, web site or web
+service.
+
+(b) "Computer" means any compatible electronic device that accepts information
+in digital or similar form and manipulates it for a specific result based on a
+sequence of instructions.
+
+(c) "Developer" means any person who is employed by, or under contract to you or
+the Contracting Party who is creating or modifying any Source Code which is, or
+which you currently intend to be part of any Application.
+
+(d) "Licensed Developer" means any Developer, for whom you or the Contracting
+Party have purchased, or otherwise legally obtained a valid license to Use the
+Software.
+
+(e) "Permitted Time Period" means one of the following: (1) perpetually, if and
+so long as all of your or the Contracting Party’s Developers are Licensed
+Developers, and (2) 30 days if you or the Contracting Party are evaluating the
+Software.
+
+(f) "Redistributable Elements" means the redistributable files
+"SpreadsheetGear.dll", "SpreadsheetGear2023.dll",
+"SpreadsheetGear2023.Core.dll", "SpreadsheetGear2023.Drawing.dll",
+"SpreadsheetGear2023.Windows.Forms.dll",
+"SpreadsheetGear2023.Windows.Forms.Integration.dll",
+"SpreadsheetGear2023.Windows.Silverlight.dll" or
+"SpreadsheetGear2023.Windows.WPF.dll" included with the Software.
+
+(g) "Software" means all of the contents of the files, disks, CD-ROMs or other
+media with which this Agreement is provided, including, without limitation,
+SpreadsheetGear or third party computer information or software and related
+explanatory written materials or files ("Documentation"); and upgrades, modified
+versions, updates, additions, and copies of the Software, if any, licensed to
+you by SpreadsheetGear (collectively, "Updates").
+
+(h) "Source Code" means any sequence of statements or declarations written in
+some human-readable computer programming language, including but not limited to
+C\#, Visual Basic, F\#, ASP.NET, C++, C, J\#, Java, JSP, SQL, PHP, Perl, Python,
+JavaScript, Ruby, Delphi or Pascal. Content, including text, graphics, data and
+spreadsheets which are created or modified without the Use of the Software are
+explicitly excluded.
+
+(i) "SpreadsheetGear" means SpreadsheetGear, LLC, a Kansas limited liability
+company, 15621 W 87th Street Pkwy \#315, Lenexa, Kansas 66219.
+
+(j) "Use" or "Using" means to access, install, download, copy or otherwise
+benefit from using the functionality of the Software in accordance with the
+Documentation for the purposes of creating or modifying any Source Code that is
+part of any Application.
+
+(k) "Application User" means anyone who is not a Developer and who uses any
+Application, including but not limited to employees, contractors, prospects,
+clients and customers of the Contracting Party and the Contracting Party's
+affiliates.
+
+2. Software License. For the Permitted Time Period but subject to your and the
+Contracting Party’s compliance with the terms of this Agreement, SpreadsheetGear
+grants to you a non-exclusive license to Use the Software for the purposes
+described in the Documentation.
+
+(a) General Use. You may Use the Software on any number of primary Computers
+provided that such primary Computers are accessed only by Licensed Developers.
+
+(b) Backup Copy. You may make backup copies of the Software, provided your
+backup copies are not Used on any Computer.
+
+(c) Portable or Home Computer Use. In addition to Using the Software on primary
+Computers, each Licensed Developer may Use the Software on either a portable
+Computer or a Computer located at their home, provided the Software on the
+portable or home Computer is Used only by that Licensed Developer.
+
+(d) Redistribution. You or the Contracting Party may redistribute to any number
+of Application Users one or more Redistributable Elements, without modification,
+as part of any number of Applications, if you or the Contracting Party comply
+with each of the following requirements: (1) each and every Developer who
+creates or modifies any Source Code of any Application is a Licensed Developer,
+(2) each and every Application adds substantial and primary functionality to the
+Redistributable Elements, (3) further redistribution by your end users is not
+permitted, (4) the Redistributable Elements are not redistributed as part of a
+general purpose spreadsheet library, spreadsheet component, spreadsheet add-in
+or spreadsheet application, (5) the Redistributable Elements are not
+redistributed with any software that exposes an application programming
+interface to any person who is not a Licensed Developer, and (6) the
+Redistributable Elements are not redistributed with any software used to develop
+software.
+
+3. Support Services. Support services for the Software are available from
+SpreadsheetGear, a description of which is available online at
+www.spreadsheetgear.com. Your Use of any software, documentation, information,
+or materials provided to you in conjunction with support services is subject to
+this Agreement. SpreadsheetGear may use any software, documentation,
+information, or materials you provide to SpreadsheetGear for improving current
+support services and for developing future support service offerings and new
+software products.
+
+4. Intellectual Property Ownership, Copyright Protection. The Software and any
+copies that you make are the intellectual property of and are owned by
+SpreadsheetGear and its suppliers. The structure, organization and code of the
+Software are the valuable trade secrets and confidential information of
+SpreadsheetGear. The Software is protected by law including, without limitation,
+the copyright laws of the United States and other countries, and by
+international treaty provisions. Except as expressly stated herein, this
+Agreement does not grant you any intellectual property rights in the Software
+and SpreadsheetGear reserves all rights not expressly granted to you.
+
+5. Restrictions.
+
+(a) Notices. You may not copy the Software except as set forth in Section 2. Any
+copy of the Software that you make must contain the same copyright and other
+proprietary notices that appear on or in the Software.
+
+(b) No Modifications. You may not modify, adapt or translate the Software. You
+may not reverse engineer, decompile, disassemble or otherwise attempt to
+discover the source code of the Software.
+
+(c) Transfer. You may not rent, lease, sublicense, assign or transfer your
+rights in the Software, or authorize all or any portion of the Software to be
+copied onto a third party’s Computer except as may be expressly permitted
+herein.
+
+6. Limited Warranty.
+
+(a) SpreadsheetGear warrants to you or the Contracting Party that the Software
+will perform substantially in accordance with the Documentation for the 90-day
+period following your receipt and installation of the Software when Used on the
+recommended operating system and hardware configuration. THIS LIMITED WARRANTY
+DOES NOT APPLY TO PREVIOUSLY OWNED, BETA, RELEASE CANDIDATE, OR EVALUATION
+COPIES OF THE SOFTWARE OR TO SUPPORT SERVICES. You must make your warranty
+claim, and provide proof of purchase, within the 90-day warranty period. If the
+Software does not perform substantially in accordance with the Documentation,
+the entire liability of SpreadsheetGear and your exclusive remedy is limited to,
+at SpreadsheetGear’s option, either the replacement of the Software or the
+refund of the license fee you paid for the Software.
+
+(b) THE FOREGOING LIMITED WARRANTY IS THE ONLY WARRANTY MADE BY SPREADSHEETGEAR
+AND STATES THE SOLE AND EXCLUSIVE REMEDY FOR SPREADSHEETGEAR’S BREACH OF
+WARRANTY. PREVIOUSLY OWNED, BETA, RELEASE CANDIDATE, OR EVALUATION COPIES OF THE
+SOFTWARE AND SUPPORT SERVICES ARE PROVIDED AS IS AND WITH ALL FAULTS. EXCEPT FOR
+ANY WARRANTY, CONDITION, REPRESENTATION OR TERM TO THE EXTENT TO WHICH THE SAME
+CANNOT OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR
+JURISDICTION, SPREADSHEETGEAR MAKES NO OTHER WARRANTIES, CONDITIONS,
+REPRESENTATIONS, OR TERMS (EXPRESS OR IMPLIED WHETHER BY STATUTE, COMMON LAW,
+CUSTOM, USAGE OR OTHERWISE) AS TO ANY MATTER INCLUDING, WITHOUT LIMITATION,
+PERFORMANCE, SECURITY, NON-INFRINGEMENT OF THIRD PARTY RIGHTS, INTEGRATION,
+MERCHANTABILITY, QUIET ENJOYMENT, SATISFACTORY QUALITY, OR FITNESS FOR ANY
+PARTICULAR PURPOSE.
+
+7. Limitation of Liability. EXCEPT FOR THE EXCLUSIVE REMEDY SET FORTH ABOVE, IN
+NO EVENT WILL SPREADSHEETGEAR BE LIABLE TO YOU FOR ANY LOSS, DAMAGES, CLAIMS OR
+COSTS WHATSOEVER OR ANY CONSEQUENTIAL, INDIRECT, INCIDENTAL DAMAGES, OR ANY LOST
+PROFITS OR LOST SAVINGS, EVEN IF A SPREADSHEETGEAR REPRESENTATIVE HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH LOSS, DAMAGES, CLAIMS OR COSTS OR FOR ANY
+CLAIM BY ANY THIRD PARTY. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE
+EXTENT PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. SPREADSHEETGEAR’S
+AGGREGATE LIABILITY UNDER OR IN CONNECTION WITH THIS AGREEMENT IS LIMITED TO THE
+AMOUNT PAID FOR THE SOFTWARE.
+
+8. Survival. The provisions of Sections 4, 5, 6, 7 and 9 survive the termination
+of this Agreement, but this survival does not imply or create any continued
+right to Use the Software, or redistribute or use any Application after
+termination of this Agreement.
+
+9. Indemnity. You agree to defend and indemnify SpreadsheetGear and its agents,
+representatives, successors and assigns from and against all claims,
+liabilities, obligations, judgments, causes of actions, costs and expenses
+(including reasonable attorneys’ fees) arising out of your Use of the Software,
+or redistribution or use of any Application.
+
+10. Export Rules. You agree that the Software will not be shipped, transferred
+or exported into any country or used in any manner prohibited by the United
+States Export Administration Act of 1979, as amended, or any other United States
+or state export law, regulation, rule, or policy (collectively the "Export
+Laws"). In addition, if the Software is identified as an export controlled item
+under the Export Laws, you represent and warrant that you are not a citizen, or
+otherwise located within, an embargoed nation (including, without limitation
+Iran, Syria, Northern Sudan, Cuba, and North Korea), you are not on the U.S.
+Treasury Department's list of specially designated nationals and blocked persons
+and that you are not otherwise prohibited under the Export Laws from receiving
+the Software without a license or the satisfaction of any other requirement of
+the Export Laws. The grant of rights to Use the Software is conditioned upon
+your or the Contracting Party’s forfeiture of such rights if you or the
+Contracting Party fail to comply with the terms of this Agreement.
+
+11. Governing Law. This Agreement will be governed by and construed in
+accordance with the substantive laws of the State of Kansas. This Agreement will
+not be governed by the conflict of law rules of any jurisdiction or the United
+Nations Convention on Contracts for the International Sale of Goods, the
+application of which is expressly excluded.
+
+12. General Provisions. If any part of this Agreement is found void and
+unenforceable, it will not affect the validity of the balance of this Agreement,
+which will remain valid and enforceable according to its terms. This Agreement
+will not prejudice the statutory rights of any party dealing as a consumer. A
+written agreement signed by an authorized officer of SpreadsheetGear is the only
+way to modify this Agreement. SpreadsheetGear may license Updates to you with
+additional or different terms. This is the entire agreement between
+SpreadsheetGear and you or the Contracting Party relating to the Software and it
+supersedes any prior representations, discussions, undertakings, communications
+or advertising relating to the Software.
+
+13. Notice to U.S. Government End Users. The Software and Documentation are
+"Commercial Items," as that term is defined at 48 C.F.R. §2.101, consisting of
+"Commercial Computer Software" and "Commercial Computer Software Documentation,"
+as such terms are used in 48 C.F.R. §12.212 or 48 C.F.R. §227.7202, as
+applicable. Consistent with 48 C.F.R. §12.212 or 48 C.F.R. §§227.7202-1 through
+227.7202-4, as applicable, the Commercial Computer Software and Commercial
+Computer Software Documentation are being licensed to U.S. Government end users
+(a) only as Commercial Items and (b) with only those rights as are granted to
+all other end users pursuant to the terms and conditions herein.
+Unpublished-rights reserved under the copyright laws of the United States are
+reserved to SpreadsheetGear.
+
+14. Compliance with Agreement.
+
+(a) This Agreement, including your right to Use the Software and your right to
+redistribute or use any Application, will terminate immediately, without notice
+from SpreadsheetGear if you fail to comply with the terms and conditions of this
+Agreement. Upon termination, you agree to destroy all copies of the Software and
+to immediately stop redistribution or use of any and all Applications. This is
+in addition to any criminal, civil or other remedies.
+
+(b) SpreadsheetGear reserves the right to request a written statement of
+compliance with the terms of this Agreement, and you or the Contracting Party
+must conduct an audit and comply with the request within 30 days.
+
+SpreadsheetGear® is a registered trademark of SpreadsheetGear LLC.
+
+Copyright © 2019, SpreadsheetGear LLC. All Rights Reserved.

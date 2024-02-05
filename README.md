@@ -35,3 +35,7 @@ V3 :
 	For a big event, it's impossible to keep.
 
 	So the creation and the update of a customer is directly in the file imported
+
+V4 :
+	This fourth version is one of the definitve version. All the first Users Stories are done and functionnal.
+	
