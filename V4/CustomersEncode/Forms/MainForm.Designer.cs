@@ -311,6 +311,7 @@
             // 
             this.AddTombolaButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.AddTombolaButton.BackColor = System.Drawing.Color.Red;
+            this.AddTombolaButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddTombolaButton.Enabled = false;
             this.AddTombolaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddTombolaButton.Location = new System.Drawing.Point(1268, 150);
@@ -320,13 +321,13 @@
             this.AddTombolaButton.Text = "Ajouter tombola";
             this.AddTombolaButton.UseVisualStyleBackColor = false;
             this.AddTombolaButton.Click += new System.EventHandler(this.AddTombolaButton_Click);
-            this.AddTombolaButton.MouseHover += new System.EventHandler(this.AddTombolaButton_MouseHover);
             // 
             // ImportExcelButton
             // 
             this.ImportExcelButton.AllowDrop = true;
             this.ImportExcelButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.ImportExcelButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ImportExcelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ImportExcelButton.Location = new System.Drawing.Point(194, 616);
             this.ImportExcelButton.MinimumSize = new System.Drawing.Size(206, 51);
@@ -341,6 +342,7 @@
             // 
             this.AddUserAndTombolaButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.AddUserAndTombolaButton.BackColor = System.Drawing.Color.Red;
+            this.AddUserAndTombolaButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddUserAndTombolaButton.Enabled = false;
             this.AddUserAndTombolaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddUserAndTombolaButton.Location = new System.Drawing.Point(1268, 337);
@@ -350,12 +352,12 @@
             this.AddUserAndTombolaButton.Text = "Ajouter utilisateur";
             this.AddUserAndTombolaButton.UseVisualStyleBackColor = false;
             this.AddUserAndTombolaButton.Click += new System.EventHandler(this.AddNewUser_Click);
-            this.AddUserAndTombolaButton.MouseHover += new System.EventHandler(this.AddUserAndTombolaButton_MouseHover);
             // 
             // EditUserButton
             // 
             this.EditUserButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.EditUserButton.BackColor = System.Drawing.Color.Red;
+            this.EditUserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditUserButton.Enabled = false;
             this.EditUserButton.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.EditUserButton.FlatAppearance.BorderSize = 0;
@@ -367,11 +369,11 @@
             this.EditUserButton.Text = "Modifier utilisateur";
             this.EditUserButton.UseVisualStyleBackColor = false;
             this.EditUserButton.Click += new System.EventHandler(this.EditUserButton_Click);
-            this.EditUserButton.MouseHover += new System.EventHandler(this.EditUserButton_MouseHover);
             // 
             // HelpButton
             // 
             this.HelpButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.HelpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HelpButton.Location = new System.Drawing.Point(1526, 9);
             this.HelpButton.Name = "HelpButton";
@@ -380,7 +382,6 @@
             this.HelpButton.Text = "?";
             this.HelpButton.UseVisualStyleBackColor = true;
             this.HelpButton.Click += new System.EventHandler(this.HelpButton_Click);
-            this.HelpButton.MouseHover += new System.EventHandler(this.HelpButton_MouseHover);
             // 
             // MainForm
             // 

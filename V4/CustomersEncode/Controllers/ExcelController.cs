@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using GemBox.Spreadsheet;
 using Aspose.Cells;
+using CustomersEncode.Forms;
 
 
 namespace CustomersEncode.Controllers
@@ -17,12 +18,16 @@ namespace CustomersEncode.Controllers
     {
 
         /// Initialize variables
-        StorageFile _CustomersListFile, _TombolaListFile, _EditCustomersListFile, _NewCustomersListFile;
-        HashSet<Customer> _CustomersSet = new HashSet<Customer>();
-        Dictionary<Customer, int> _CustomersIndex = new Dictionary<Customer, int>();
+        private StorageFile _CustomersListFile, _TombolaListFile, _EditCustomersListFile, _NewCustomersListFile;
+        private HashSet<Customer> _CustomersSet = new HashSet<Customer>();
+        private Dictionary<Customer, int> _CustomersIndex = new Dictionary<Customer, int>();
+        private PopUpAskForm popup = new PopUpAskForm();
+        private bool _PassToImport = false;
+
 
         public ExcelController()
         {
+            popup.ClickRequest += FormClickRequest;
             SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
             _TombolaListFile = new StorageFile() { FullPathExcel = @"C:\FoireDuVin2024\Tombola.xls", FullPathCSV = @"C:\FoireDuVin2024\Tombola.csv" };
             _NewCustomersListFile = new StorageFile() { FullPathExcel = @"C:\FoireDuVin2024\NouveauxClients.xls", FullPathCSV = @"C:\FoireDuVin2024\NouveauxClients.csv" };
@@ -254,37 +259,50 @@ namespace CustomersEncode.Controllers
             return _CustomersSet;
         }
 
-
         /// <summary>
         /// Import an excel file to get customers and put them in the collection
         /// </summary>
         public HashSet<Customer> ImportUsers()
         {
-            // Problem if we import a second time a excel file : 
-            // The program said that we can't write because this one is in progress..
-            OpenFileDialog file = new OpenFileDialog();
-            file.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
-            if (file.ShowDialog() == DialogResult.OK)
+            // Warn the user to lose the current data (== customers)
+            if(_CustomersSet.Count > 0)
             {
-                /// Check if it's an excel file
-                string fileExt = Path.GetExtension(file.FileName);
-                if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
+                popup.ShowDialog();
+            } else
+            {
+                _PassToImport = true;
+            }
+            if(_PassToImport)
+            {
+                _PassToImport = false;
+                OpenFileDialog file = new OpenFileDialog();
+                file.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+                if (file.ShowDialog() == DialogResult.OK)
                 {
+                    /// Check if it's an excel file
+                    string fileExt = Path.GetExtension(file.FileName);
+                    if (fileExt.CompareTo(".xls") == 0 || fileExt.CompareTo(".xlsx") == 0)
+                    {
+                        _CustomersIndex.Clear();
+                        _CustomersSet.Clear();
+                        // Create the CSV file to save data
+                        string extension = Path.GetExtension(file.FileName);
+                        string directoryCSV = file.FileName.Substring(0, file.FileName.Length - extension.Length) + ".csv";
 
-                    _CustomersIndex.Clear();
-                    _CustomersSet.Clear();
-                    // Create the CSV file to save data
-                    string extension = Path.GetExtension(file.FileName);
-                    string directoryCSV = file.FileName.Substring(0, file.FileName.Length - extension.Length) + ".csv";
-
-                    LoadCollections(file.FileName, directoryCSV);
-                }
-                else
-                {
-                    MessageBox.Show("Sélectionnez un fichier Excel uniquement !", "Erreur !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        LoadCollections(file.FileName, directoryCSV);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Sélectionnez un fichier Excel uniquement !", "Erreur !", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
             return _CustomersSet;
+        }
+
+        private void FormClickRequest(object sender,  EventArgs e)
+        {
+            _PassToImport = (bool)sender;
         }
 
         private void LoadCollections(string filePath, string directoryCSV)

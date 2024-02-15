@@ -12,8 +12,8 @@ namespace CustomersEncode
     {
         private HashSet<Customer> _CustomersSet;
         private ExcelController _ExcelController = new ExcelController();
-        private string previousSearch = "";
-        private Customer customerToEdit;
+        private string _PreviousSearch = "";
+        private Customer _CustomerToEdit;
 
         public MainForm()
         {
@@ -36,7 +36,9 @@ namespace CustomersEncode
                 _CustomersSet = _ExcelController.ImportUsers();
                 ClearAllTextsBox();
                 ClearSearch();
-            }catch (Exception ex)
+                _CustomerToEdit = null;
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Une erreur inconnue est survenue durant l'importation du fichier EXCEL : \n" + ex.Message, "Erreur inconnue", MessageBoxButtons.OK, MessageBoxIcon.Error);
             } finally
@@ -53,6 +55,7 @@ namespace CustomersEncode
                 _ExcelController.WorkUserOnExcel(customer, AddUserTypeEnum.TOMBOLA);
                 if(sender != null)
                     ShowSuccessOperationAdd();
+                _CustomerToEdit = null;
             }
             catch (Exception ex)
             {
@@ -87,6 +90,7 @@ namespace CustomersEncode
                 // after we add to tombola, perhaps he will be add 2 times if user didn't import excel file
                 AddTombolaButton_Click(null, null);
                 ShowSuccessOperationAdd();
+                _CustomerToEdit = null;
             }
             catch (NullReferenceException)
             {
@@ -128,10 +132,11 @@ namespace CustomersEncode
             var customer = GetCustomer();
             try
             {
-                _CustomersSet = _ExcelController.WorkUserOnExcel(customer, AddUserTypeEnum.EDIT, customerToEdit);
+                _CustomersSet = _ExcelController.WorkUserOnExcel(customer, AddUserTypeEnum.EDIT, _CustomerToEdit);
                 ShowSuccessOperationEdit();
                 EditUserButton.BackColor = System.Drawing.Color.Red;
                 EditUserButton.Enabled = false;
+                _CustomerToEdit = null;
             }
             catch (NullReferenceException)
             {
@@ -204,36 +209,6 @@ namespace CustomersEncode
         }
 
         /// <summary>
-        /// Switch cursor to hand to see it's clickable
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AddTombolaButton_MouseHover(object sender, EventArgs e)
-        {
-            AddTombolaButton.Cursor = Cursors.Hand;
-        }
-
-        /// <summary>
-        /// Switch cursor to hand to see it's clickable
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void AddUserAndTombolaButton_MouseHover(object sender, EventArgs e)
-        {
-            AddUserAndTombolaButton.Cursor = Cursors.Hand;
-        }
-
-        /// <summary>
-        /// Switch cursor to hand to see it's clickable
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void EditUserButton_MouseHover(object sender, EventArgs e)
-        {
-            EditUserButton.Cursor = Cursors.Hand;
-        }
-
-        /// <summary>
         /// For the postalcode, we only need numbers. The function'll check and will write if it's number that are input
         /// </summary>
         /// <param name="sender"></param>
@@ -261,9 +236,9 @@ namespace CustomersEncode
         {
             var search = SearchTextBox.Text.ToLower().Trim();
             //If we just have added a space in the search bar, it won't search
-            if (!search.Equals(previousSearch))
+            if (!search.Equals(_PreviousSearch))
             {
-                previousSearch = search;
+                _PreviousSearch = search;
                 //Split space to get differents words
                 string[] words = search.Split();
                 //Clear the listview for removing recent results
@@ -355,11 +330,6 @@ namespace CustomersEncode
             _HelpForm.Show();
         }
 
-        private void HelpButton_MouseHover(object sender, EventArgs e)
-        {
-            HelpButton.Cursor = Cursors.Hand;
-        }
-
         private void CustomersListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (CustomersListView.SelectedItems.Count == 0)
@@ -374,7 +344,7 @@ namespace CustomersEncode
             MailTextBox.Text = item.SubItems[6].Text;
 
 
-            customerToEdit = _CustomersSet.First(c => c.Mail.Equals(item.SubItems[6].Text) && c.FirstName.Equals(item.SubItems[2].Text) && c.Name.Equals(item.SubItems[1].Text));
+            _CustomerToEdit = _CustomersSet.First(c => c.Mail.Equals(item.SubItems[6].Text) && c.FirstName.Equals(item.SubItems[2].Text) && c.Name.Equals(item.SubItems[1].Text));
 
             EditUserButton.BackColor = System.Drawing.Color.Chartreuse;
             EditUserButton.Enabled = true;

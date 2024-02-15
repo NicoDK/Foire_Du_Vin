@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomersEncode", "CustomersEncode\CustomersEncode.csproj", "{B26579E0-4E74-4DF8-B7E5-DF57C3E4982E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerEncodeTest", "CustomerEncodeTest\CustomerEncodeTest.csproj", "{E3DC99B8-DE7E-4BA1-B41A-482062AE027B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B26579E0-4E74-4DF8-B7E5-DF57C3E4982E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B26579E0-4E74-4DF8-B7E5-DF57C3E4982E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B26579E0-4E74-4DF8-B7E5-DF57C3E4982E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3DC99B8-DE7E-4BA1-B41A-482062AE027B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3DC99B8-DE7E-4BA1-B41A-482062AE027B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3DC99B8-DE7E-4BA1-B41A-482062AE027B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3DC99B8-DE7E-4BA1-B41A-482062AE027B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -265,6 +265,12 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\PopUpAskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PopUpAskForm.Designer.cs">
+      <DependentUpon>PopUpAskForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AddUserTypeEnum.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\StorageFile.cs" />
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PopUpAskForm.resx">
+      <DependentUpon>PopUpAskForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
