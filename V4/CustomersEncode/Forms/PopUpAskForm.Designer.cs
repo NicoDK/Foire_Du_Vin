@@ -1,6 +1,6 @@
 ﻿namespace CustomersEncode.Forms
 {
-    partial class PopUpAskForm
+    partial class WarningForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PopUpAskForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WarningForm));
             this.DenyButton = new System.Windows.Forms.Button();
             this.AffirmButton = new System.Windows.Forms.Button();
             this.TextWarn = new System.Windows.Forms.Label();
@@ -79,17 +79,18 @@
     "tinuer ?";
             this.TextWarn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // PopUpAskForm
+            // WarningForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(484, 311);
             this.Controls.Add(this.DenyButton);
             this.Controls.Add(this.AffirmButton);
             this.Controls.Add(this.TextWarn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "PopUpAskForm";
+            this.Name = "WarningForm";
             this.Text = "Attention";
             this.ResumeLayout(false);
 

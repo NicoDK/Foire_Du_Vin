@@ -349,7 +349,7 @@
             this.AddUserAndTombolaButton.Name = "AddUserAndTombolaButton";
             this.AddUserAndTombolaButton.Size = new System.Drawing.Size(180, 92);
             this.AddUserAndTombolaButton.TabIndex = 18;
-            this.AddUserAndTombolaButton.Text = "Ajouter utilisateur";
+            this.AddUserAndTombolaButton.Text = "Créer client";
             this.AddUserAndTombolaButton.UseVisualStyleBackColor = false;
             this.AddUserAndTombolaButton.Click += new System.EventHandler(this.AddNewUser_Click);
             // 
@@ -366,7 +366,7 @@
             this.EditUserButton.Name = "EditUserButton";
             this.EditUserButton.Size = new System.Drawing.Size(180, 92);
             this.EditUserButton.TabIndex = 19;
-            this.EditUserButton.Text = "Modifier utilisateur";
+            this.EditUserButton.Text = "Modifier client";
             this.EditUserButton.UseVisualStyleBackColor = false;
             this.EditUserButton.Click += new System.EventHandler(this.EditUserButton_Click);
             // 

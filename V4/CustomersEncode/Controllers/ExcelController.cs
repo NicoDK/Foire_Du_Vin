@@ -21,7 +21,7 @@ namespace CustomersEncode.Controllers
         private StorageFile _CustomersListFile, _TombolaListFile, _EditCustomersListFile, _NewCustomersListFile;
         private HashSet<Customer> _CustomersSet = new HashSet<Customer>();
         private Dictionary<Customer, int> _CustomersIndex = new Dictionary<Customer, int>();
-        private PopUpAskForm popup = new PopUpAskForm();
+        private WarningForm popup = new WarningForm();
         private bool _PassToImport = false;
 
 
@@ -235,7 +235,7 @@ namespace CustomersEncode.Controllers
         {
             var workbook = new Workbook(_CustomersListFile.FullPathExcel);
             var worksheet = workbook.Worksheets[0];
-            int index = _CustomersIndex.First(kv => kv.Key.Mail.Equals(customerToEdit.Mail) && kv.Key.Name.Equals(customerToEdit.Name) && kv.Key.FirstName.Equals(customerToEdit.FirstName)).Value - 1;
+            int index = _CustomersIndex.First(kv => kv.Key.Mail.Equals(customerToEdit.Mail) && kv.Key.Name.Equals(customerToEdit.Name) && kv.Key.FirstName.Equals(customerToEdit.FirstName)).Value;
 
             worksheet.Cells[index, 0].Value = customer.Name;
             worksheet.Cells[index, 1].Value = customer.FirstName;
@@ -310,7 +310,7 @@ namespace CustomersEncode.Controllers
             if (File.Exists(directoryCSV)) File.Delete(directoryCSV);
 
             // Variable index == customer index in the XLS
-            int index = 1;
+            int index = 0;
 
             FileStream usersFileCSV = new FileStream(directoryCSV, FileMode.Create);
             // Write header

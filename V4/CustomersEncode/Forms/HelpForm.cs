@@ -15,6 +15,7 @@ namespace CustomersEncode.Forms
         public HelpForm()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
     }
 }

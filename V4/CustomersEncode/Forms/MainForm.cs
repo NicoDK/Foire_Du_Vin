@@ -20,6 +20,7 @@ namespace CustomersEncode
             InitializeComponent();
             CustomersListView.MultiSelect = false;
             CustomersListView.Scrollable = true;
+            this.CenterToScreen();
         }
 
 
@@ -54,8 +55,10 @@ namespace CustomersEncode
             {
                 _ExcelController.WorkUserOnExcel(customer, AddUserTypeEnum.TOMBOLA);
                 if(sender != null)
+                {
                     ShowSuccessOperationAdd();
-                _CustomerToEdit = null;
+                    _CustomerToEdit = null;
+                }
             }
             catch (Exception ex)
             {
@@ -168,6 +171,7 @@ namespace CustomersEncode
         {
             MessageBox.Show("Le client a été ajouté avec succès ! ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ClearAllTextsBox();
+            ClearSearch();
         }
 
         private void ShowSuccessOperationEdit()

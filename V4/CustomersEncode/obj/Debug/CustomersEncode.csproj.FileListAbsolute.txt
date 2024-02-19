@@ -131,4 +131,4 @@ D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\Cu
 D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\CustomersEncode.csproj.CopyComplete
 D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\CustomersEncode.exe
 D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\CustomersEncode.pdb
-D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\CustomersEncode.Forms.PopUpAskForm.resources
+D:\RTTAywaille\2023-2024\FoireDuVin\CustomersEncode\CustomersEncode\obj\Debug\CustomersEncode.Forms.WarningForm.resources

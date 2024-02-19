@@ -1,23 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CustomersEncode.Forms
 {
-    public partial class PopUpAskForm : Form
+    public partial class WarningForm : Form
     {
 
         public event EventHandler ClickRequest;
 
-        public PopUpAskForm()
+        public WarningForm()
         {
             InitializeComponent();
+            this.CenterToScreen();
         }
 
         private void Button_Click(object sender, EventArgs e)
