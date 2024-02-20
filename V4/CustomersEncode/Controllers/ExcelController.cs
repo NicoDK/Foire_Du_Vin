@@ -171,7 +171,7 @@ namespace CustomersEncode.Controllers
         private void AddInWorkbook(Customer customer, string path)
         {
             Workbook workbook = new Workbook(path);
-            int index = workbook.Worksheets[0].Cells.Rows.Count;
+            int index = workbook.Worksheets[0].Cells.GetLastDataRow(0) + 1;
             if(index < 0) index = 0;
             var worksheet = workbook.Worksheets[0];
 
